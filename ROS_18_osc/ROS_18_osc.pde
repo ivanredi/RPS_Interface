@@ -11,7 +11,7 @@ color[] goodcolor = new color[maxpal];
 
 
 
-boolean DEBUG_MODE = true;
+boolean DEBUG_MODE = false;
 
 
 boolean SHOW_FOG = false;
@@ -60,7 +60,7 @@ void setup() {
   font = loadFont("HelveticaNeue-12.vlw");  
   textFont(font, 40);
   
-  if(!DEBUG_MODE) oscP5 = new OscP5(this, 7001);
+  if(!DEBUG_MODE) oscP5 = new OscP5(this, 7000);
   if(DEBUG_MODE) currentUserCount = 0;
 
 
